@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="parallel Suites" parallel="tests">
+  <listeners>
+        <listener class-name="suite1.ExtentReporterNG" />
+        
+  </listeners> 
+  
+  <test name="Sanity">
+  <parameter name="browser" value="GC"/>
+  <parameter name="url" value="http://183.82.118.175:8080/Cyclos/do/login"/>  
+    <classes>
+            
+      <class name="suite1.Login"/>
+      
+    </classes>
+  </test>
+     
+    
+</suite>
